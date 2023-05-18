@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Candara', sans-serif;
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: LightBlue;
+  transform: translate3d(0, 0, 0);
+}
+
+.level-1 {
+  animation: animation_fg linear 95s infinite both;
+  background: url(https://raw.githubusercontent.com/YanaKravchenko1/yanka/main/mountain1.png) 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 135px;
+}
+
+.level-2 {
+  animation: animation_fg linear 75s infinite both;
+  background: url(https://raw.githubusercontent.com/YanaKravchenko1/yanka/main/forest_mytn1.png) 0 100%repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 145px;
+}
+
+.level-3 {
+  animation: animation_fg linear 55s infinite both;
+  background: url(https://raw.githubusercontent.com/YanaKravchenko1/yanka/main/forest_chotk1.png) 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 158px;
+}
+
+.level-4 {
+  animation: animation_fg linear 35s infinite both;
+  background: url(https://raw.githubusercontent.com/YanaKravchenko1/yanka/main/tree.png) 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 178px;
+}
+
+.level-5 {
+  animation: animation_fg linear 25s infinite both;
+  background: url(https://raw.githubusercontent.com/YanaKravchenko1/yanka/main/grass1.png) 0 
+100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 311px;
+}
+
+.coach-1 {
+  background: url(https://raw.githubusercontent.com/YanaKravchenko1/yanka/main/kitty.png) 0 100% no-repeat;
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 75px;
+  animation: animation_coach linear 10s infinite both;
+}
+  
+ .coach-2 {
+  background: url(https://raw.githubusercontent.com/YanaKravchenko1/yanka/main/bird.png) 0 100% no-repeat;
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 75px;
+  animation: animation_coach linear 10s infinite both;
+}
+
+.coach-2 {
+  animation: animation_coach linear 15s infinite both;
+}
+
+@keyframes animation_fg {
+  0% {
+    background-position: 2765px 100%;
+  }
+  100% {
+    background-position: 550px 100%;
+  }
+}
+@keyframes animation_coach {
+  0% {
+    background-position: -300px 100%;
+  }
+  100% {
+    background-position: 2000px 100%;
+  }
+}
